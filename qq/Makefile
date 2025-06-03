@@ -10,8 +10,6 @@ MAINTAINER=     yklaxds@gmail.com
 COMMENT=        Tencent QQ for Linux
 WWW=            https://im.qq.com/linuxqq/
 
-RUN_DEPENDS=    linux_base-rl9>0:emulators/linux_base-rl9
-
 USES=           linux:rl9
 USE_LINUX=      xorglibs nss dbus cups-libs alsalib alsa-plugins-oss alsa-plugins-pulseaudio ffmpeg-libs
 
