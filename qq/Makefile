@@ -11,7 +11,8 @@ COMMENT=        Tencent QQ for Linux
 WWW=            https://im.qq.com/linuxqq/
 
 USES=           linux:rl9
-USE_LINUX=      xorglibs nss dbus cups-libs alsalib alsa-plugins-oss alsa-plugins-pulseaudio ffmpeg-libs
+USE_LINUX=      xorglibs nss dbus cups-libs alsalib alsa-plugins-oss alsa-plugins-pulseaudio \
+				ffmpeg-libs at-spi2-atk gtk3
 
 ONLY_FOR_ARCHS= aarch64 amd64
 
