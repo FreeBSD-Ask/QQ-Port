@@ -29,7 +29,7 @@ LINUX_ARCH_amd64=      x86_64
 LINUX_ARCH_aarch64=    aarch64
 
 post-extract:
-	@${REINPLACE_CMD} -e 's|/opt/QQ/qq|${PREFIX}/share/qq/qq|' \
+	@${REINPLACE_CMD} -e 's|^Exec=/opt/QQ/qq %U|Exec=${PREFIX}/share/qq/qq --no-sandbox|' \
 		${WRKSRC}/usr/share/applications/qq.desktop
 
 do-install:
