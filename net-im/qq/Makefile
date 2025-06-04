@@ -15,7 +15,7 @@ USE_LINUX=      xorglibs nss dbus cups-libs alsalib alsa-plugins-oss alsa-plugin
 				ffmpeg-libs at-spi2-atk gtk3
 
 ONLY_FOR_ARCHS= aarch64 amd64
-
+PLIST=		${PKGDIR}/pkg-plist.${ARCH}
 SHEBANG_FILES=  opt/QQ/qq
 
 NO_BUILD=       yes
