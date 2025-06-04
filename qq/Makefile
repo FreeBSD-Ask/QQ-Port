@@ -30,7 +30,9 @@ LINUX_ARCH_aarch64=    aarch64
 
 post-extract:
 	@${REINPLACE_CMD} -e 's|^Exec=/opt/QQ/qq %U|Exec=${PREFIX}/share/qq/qq --no-sandbox|' \
+		-e 's|/usr/share/icons/hicolor/512x512/apps/qq.png|${PREFIX}/share/icons/hicolor/512x512/apps/qq.png|' \
 		${WRKSRC}/usr/share/applications/qq.desktop
+
 
 do-install:
 	${MKDIR} ${STAGEDIR}${PREFIX}/share/qq
